@@ -1,0 +1,109 @@
+body{
+    color: #FEFEFE;
+}
+
+
+#top {
+    .tutorials {
+        color: #072F60;
+        justify-content: space-between;
+
+        .head {
+
+            p {
+                font-weight: bold;
+                font-size: 30px;
+            }
+        }
+
+        .list {
+            font-size: 13px;
+            font-weight: bold;
+            color: #072F60;
+            position: relative;
+
+            li {
+                padding: 10px;
+
+                &:first-child {
+                    color: #3BBCA7;
+
+                    &::after {
+                        content: '8';
+                        position: absolute;
+                        top: 0;
+                        left: 11%;
+                        font-size: 12px;
+
+                    }
+                }
+            }
+        }
+    }
+.elements{
+    border: 2px solid red;
+    background-color: white;
+    .menu{
+        img{
+            width: 100%;
+        }
+    }
+    .details{
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+        a{
+            font-size: 12px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            padding: 7px 15px;
+            background-color: rgb(238, 238, 238);
+            color: #3BBCA7;
+            transition: 0.3s;
+            &:hover{
+                background-color: #3BBCA7;
+                color: white;
+            }
+        }
+        span{
+            font-size: 17px;
+            font-weight: bold;
+            color: #072F60;
+        }
+    }
+    .course{
+        width: 80%;
+        margin: auto;
+        margin: 20px;
+        a{
+            text-decoration: none;
+            color: #072F60;
+            font-weight: bold;
+            font-size: 17px;
+            display: inline-block;
+            width: 90%;
+            transition: 0.3s;
+            &:hover{
+                color: #3BBCA7;
+            }
+        }
+        .person{
+            margin-top: 20px;
+            border: 2px solid red;
+            color: gray;
+    p{
+        border: 2px solid black;
+    }
+         
+        img{
+            border-radius: 100%;
+            width: 100%;
+        }
+        }
+    }
+}
+}
+
+
+

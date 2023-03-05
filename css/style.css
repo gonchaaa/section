@@ -1,0 +1,91 @@
+body {
+  color: #FEFEFE;
+}
+
+#top .tutorials {
+  color: #072F60;
+  justify-content: space-between;
+}
+#top .tutorials .head p {
+  font-weight: bold;
+  font-size: 30px;
+}
+#top .tutorials .list {
+  font-size: 13px;
+  font-weight: bold;
+  color: #072F60;
+  position: relative;
+}
+#top .tutorials .list li {
+  padding: 10px;
+}
+#top .tutorials .list li:first-child {
+  color: #3BBCA7;
+}
+#top .tutorials .list li:first-child::after {
+  content: "8";
+  position: absolute;
+  top: 0;
+  left: 11%;
+  font-size: 12px;
+}
+#top .elements {
+  border: 2px solid red;
+  background-color: white;
+}
+#top .elements .menu img {
+  width: 100%;
+}
+#top .elements .details {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+#top .elements .details a {
+  font-size: 12px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 7px 15px;
+  background-color: rgb(238, 238, 238);
+  color: #3BBCA7;
+  transition: 0.3s;
+}
+#top .elements .details a:hover {
+  background-color: #3BBCA7;
+  color: white;
+}
+#top .elements .details span {
+  font-size: 17px;
+  font-weight: bold;
+  color: #072F60;
+}
+#top .elements .course {
+  width: 80%;
+  margin: auto;
+  margin: 20px;
+}
+#top .elements .course a {
+  text-decoration: none;
+  color: #072F60;
+  font-weight: bold;
+  font-size: 17px;
+  display: inline-block;
+  width: 90%;
+  transition: 0.3s;
+}
+#top .elements .course a:hover {
+  color: #3BBCA7;
+}
+#top .elements .course .person {
+  margin-top: 20px;
+  border: 2px solid red;
+  color: gray;
+}
+#top .elements .course .person p {
+  border: 2px solid black;
+}
+#top .elements .course .person img {
+  border-radius: 100%;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
