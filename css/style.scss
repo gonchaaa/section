@@ -1,10 +1,12 @@
-body{
+body {
     color: #FEFEFE;
 }
 
 
-#top {
+#top-one {
+
     .tutorials {
+        padding-top: 1rem;
         color: #072F60;
         justify-content: space-between;
 
@@ -23,87 +25,506 @@ body{
             position: relative;
 
             li {
-                padding: 10px;
+                a {
+                    text-decoration: none;
+                    padding: 10px;
+                    color: #072F60;
+                    transition: 0.5s;
 
-                &:first-child {
+                }
+
+                .mini-list {
                     color: #3BBCA7;
 
                     &::after {
                         content: '8';
                         position: absolute;
-                        top: 0;
-                        left: 11%;
+                        top: -20%;
+                        bottom: 0;
                         font-size: 12px;
-
+                        color: #3BBCA7;
                     }
+                }
+
+                .mini-list1 {
+                    transition: 0.5s;
+                    position: relative;
+
+                    &:hover {
+                        color: #3BBCA7;
+
+                        &::before {
+                            opacity: 1;
+                        }
+                    }
+
+                    &::before {
+                        content: '5';
+                        position: absolute;
+                        top: 0%;
+                        right: 0;
+                        font-size: 12px;
+                        color: #3BBCA7;
+                        opacity: 0;
+                        transition: 0.5s;
+                    }
+                }
+
+                .mini-list2 {
+                    transition: 0.5s;
+                    position: relative;
+
+                    &:hover {
+                        color: #3BBCA7;
+
+                        &::before {
+                            opacity: 1;
+                        }
+                    }
+
+                    &::before {
+                        content: '5';
+                        position: absolute;
+                        top: 0%;
+                        right: 0;
+                        font-size: 12px;
+                        color: #3BBCA7;
+                        opacity: 0;
+                        transition: 0.5s;
+                    }
+                }
+
+                .mini-list3 {
+                    transition: 0.5s;
+                    position: relative;
+
+                    &:hover {
+                        color: #3BBCA7;
+
+                        &::before {
+                            opacity: 1;
+                        }
+                    }
+
+                    &::before {
+                        content: '7';
+                        position: absolute;
+                        top: 0%;
+                        right: 0;
+                        font-size: 12px;
+                        color: #3BBCA7;
+                        opacity: 0;
+                        transition: 0.5s;
+                    }
+                }
+
+            }
+        }
+    }
+
+
+    .elements {
+        background-color: white;
+        margin: 35px 0;
+        border-radius: 2mm;
+        box-shadow: 10px 0px 10px rgb(197, 196, 196);
+
+        .menu {
+            border-top-left-radius: 2mm;
+            border-top-right-radius: 2mm;
+            overflow: hidden;
+            position: relative;
+
+&:hover{
+  .overlay{
+   opacity: 1;
+  }
+}
+            img {
+
+                width: 100%;
+            }
+            .overlay{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: 0.5s;
+                background-color:rgba(0, 0, 0, 0.311);
+            }
+        }
+
+        .details {
+            width: 80%;
+            margin: auto;
+            margin-top: 30px;
+
+            a {
+                font-size: 12px;
+                text-decoration: none;
+                border-radius: 8px;
+                font-weight: bold;
+                padding: 7px 15px;
+                background-color: rgb(238, 238, 238);
+                color: #3BBCA7;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: #3BBCA7;
+                    color: white;
+                }
+            }
+
+            span {
+                font-size: 17px;
+                font-weight: bold;
+                color: #072F60;
+            }
+        }
+
+        .course {
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+
+            a {
+                text-decoration: none;
+                color: #072F60;
+                font-weight: bold;
+                font-size: 17px;
+                display: inline-block;
+                width: 90%;
+                transition: 0.3s;
+
+                &:hover {
+                    color: #3BBCA7;
+                }
+            }
+
+            .person {
+                margin-top: 20px;
+                color: gray;
+
+                p {
+                    display: inline-flex;
+                    width: 100%;
+                    height: 100%;
+                    align-items: center;
+
+                }
+
+                img {
+                    border-radius: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        hr {
+            color: gray;
+        }
+
+        .star {
+            padding-bottom: 20px;
+
+            li {
+                padding-left: 20px;
+                color: black;
+                font-size: 15px;
+                color: gray;
+                padding-right: 10px;
+
+                &:nth-child(1) {
+                    i {
+                        color: #72bcaf;
+                        padding-right: 5px;
+                    }
+                }
+
+                &:nth-child(2) {
+                    i {
+                        padding-right: 5px;
+                        color: #79bdb2;
+                    }
+                }
+
+                i {
+                    color: #FFB60A;
                 }
             }
         }
     }
-.elements{
+}
+
+
+#top-two {
+    padding: 5rem;
     border: 2px solid red;
-    background-color: white;
-    .menu{
-        img{
-            width: 100%;
-        }
-    }
-    .details{
-        width: 80%;
-        margin: auto;
-        margin-top: 30px;
-        a{
-            font-size: 12px;
-            text-decoration: none;
-            border-radius: 8px;
+
+    .head2 {
+        text-align: center;
+
+        p {
             font-weight: bold;
-            padding: 7px 15px;
-            background-color: rgb(238, 238, 238);
-            color: #3BBCA7;
-            transition: 0.3s;
-            &:hover{
-                background-color: #3BBCA7;
-                color: white;
+            font-size: 30px;
+            z-index: 1;
+            position: relative;
+            color: #072F60;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 30%;
+                z-index: -1;
+                left: 32%;
+                width: 140px;
+                border-radius: 8mm;
+                height: 25px;
+                background-color: #f9c650;
             }
         }
-        span{
-            font-size: 17px;
-            font-weight: bold;
-            color: #072F60;
-        }
     }
-    .course{
-        width: 80%;
-        margin: auto;
-        margin: 20px;
-        a{
-            text-decoration: none;
+
+.common{
+position: relative;
+    .learn {
+        margin: 35px 0;
+        position: relative;
+        text-align: center;
+        padding: 4rem 2rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        background: url(https://thepixelcurve.com/wp/lmsmart/lp/wp-content/uploads/sites/2/2022/01/ad1@2xbg.jpg);
+
+        p {
+
+            // width: 90%;
             color: #072F60;
-            font-weight: bold;
-            font-size: 17px;
-            display: inline-block;
-            width: 90%;
-            transition: 0.3s;
-            &:hover{
-                color: #3BBCA7;
-            }
+            font-size: 23px;
+            font-weight: 700;
+
+
         }
-        .person{
-            margin-top: 20px;
-            border: 2px solid red;
+
+        span {
+
             color: gray;
-    p{
-        border: 2px solid black;
-    }
-         
-        img{
-            border-radius: 100%;
-            width: 100%;
         }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #3BBCA7;
+            padding: 10px 18px;
+            font-weight: bold;
+            transition: 0.5s;
+
+            &:hover {
+                background-color: #072F60;
+            }
+        }
+.image-1{
+margin-top: 40px;
+
+}
+     
+      
+    }
+
+
+    .elements2 {
+        background-color: white;
+        margin: 35px 0;
+        box-shadow: 10px 0px 10px rgb(197, 196, 196);
+
+        .menu2 {
+            border-top-left-radius: 2mm;
+            border-top-right-radius: 2mm;
+            overflow: hidden;
+            position: relative;
+            &:hover{
+                .overlay1{
+                    opacity: 1;
+                }
+            }
+            img {
+                width: 100%;
+            }
+              .overlay1{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: 0.5s;
+                background-color:rgba(0, 0, 0, 0.311);
+            }
+        }
+
+        .details2 {
+            width: 80%;
+            margin: auto;
+            margin-top: 30px;
+
+            a {
+                font-size: 12px;
+                text-decoration: none;
+                border-radius: 8px;
+                font-weight: bold;
+                padding: 7px 15px;
+                background-color: rgb(238, 238, 238);
+                color: #3BBCA7;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: #3BBCA7;
+                    color: white;
+                }
+            }
+
+            span {
+                font-size: 17px;
+                font-weight: bold;
+                color: #072F60;
+            }
+        }
+
+        .course2 {
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+
+            a {
+                text-decoration: none;
+                color: #072F60;
+                font-weight: bold;
+                font-size: 17px;
+                display: inline-block;
+                width: 90%;
+                transition: 0.3s;
+
+                &:hover {
+                    color: #3BBCA7;
+                }
+            }
+
+            .person2 {
+                margin-top: 20px;
+                color: gray;
+
+                p {
+                    display: inline-flex;
+                    width: 100%;
+                    height: 100%;
+                    align-items: center;
+
+                }
+
+                img {
+                    border-radius: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        hr {
+            color: gray;
+        }
+
+        .star2 {
+            padding-bottom: 20px;
+
+            li {
+                padding-left: 20px;
+                color: black;
+                font-size: 15px;
+                color: gray;
+                padding-right: 10px;
+
+                &:nth-child(1) {
+                    i {
+                        color: #72bcaf;
+                        padding-right: 5px;
+                    }
+                }
+
+                &:nth-child(2) {
+                    i {
+                        padding-right: 5px;
+                        color: #79bdb2;
+                    }
+                }
+
+                i {
+                    color: #FFB60A;
+                }
+            }
         }
     }
+   .explore{
+    background-color: #3BBCA7;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 40%;
+    transition: 0.5s;
+    &:hover{
+background-color: #072F60;
+    }
+   }
 }
 }
 
 
 
+@media (max-width:576px) {
+    #top-one {
+        .tutorials {
+            text-align: center;
+        }
+    }
+    #top-two {
+        .explore{
+            left: 50%;
+transform: translateX(-50%);
+           }
+    }
+}
+
+@media (min-width:577px) and (max-width:768px) {
+    #top-one {
+        .tutorials {
+            text-align: center;
+
+        }
+    }
+    #top-two {
+        .explore{
+            left: 50%;
+transform: translateX(-50%);
+           }
+    }
+}
+
+@media (min-width:767px) and (max-width:1024px) {
+    #top-one {
+        .tutorials {
+            text-align: center;
+        }
+    }
+    #top-two {
+        .explore{
+            left: 50%;
+transform: translateX(-50%);
+           }
+    }
+}
